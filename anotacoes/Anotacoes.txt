@@ -1,0 +1,37 @@
+Comandos e Conceitos em C:
+
+
+<stdio.h>: Biblioteca de  entrada e saida de dados.
+
+<string.h>: Biblioteca de manipulação de strings em C.
+
+typedef struct {...} Contato;:
+Define uma nova estrutura de dados chamada Contato (parecido com uma classe)
+
+void adicionarContato(const char *nome);:
+Declaração de uma função chamada adicionarContato que aceita um ponteiro para uma string constante como argumento.
+
+strcpy(agenda[0].nome, "kevinhoo");:
+Usa a função strcpy para copiar a string "kevinhoo" para o campo nome do primeiro elemento do array agenda.
+
+extern Contato agenda[MAX_CONTATOS];:
+Declaração externa da variável agenda no arquivo de cabeçalho para torná-la acessível em múltiplos arquivos.
+
+Ponteiros:
+
+const char *nome: Ponteiro para uma string constante.
+int *ptr: Ponteiro para um inteiro (exemplo genérico de ponteiro).
+struct:
+
+Utilizada para definir uma estrutura de dados personalizada (Contato).
+Arrays:
+
+Contato agenda[MAX_CONTATOS];: Declara um array de Contato para armazenar contatos.
+strcpy:
+Função da biblioteca string.h usada para copiar strings.
+main():
+Função principal que serve como ponto de entrada para o programa.
+printf:
+Função para imprimir saídas na tela.
+return 0;:
+Retorna um valor inteiro zero, indicando que o programa foi executado com sucesso.

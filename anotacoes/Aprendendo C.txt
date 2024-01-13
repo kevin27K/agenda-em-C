@@ -1,0 +1,54 @@
+Aprendendo C
+
+1. **Sintaxe Básica:**
+   - Declarar variáveis, tipos de dados, operadores.
+   - Estruturas de controle de fluxo: `if`, `else`, `switch`, `while`, `for`.
+   - Funções e procedimentos.
+
+2. **Ponteiros:**
+   - Entender o conceito de ponteiros e como usá-los.
+   - Alocação dinâmica de memória com `malloc` e `free`.
+
+3. **Arrays e Strings:**
+   - Trabalhar com arrays e strings em C.
+   - Entender a diferença entre arrays e ponteiros.
+
+4. **Estruturas de Dados:**
+   - Definir e usar structs para criar estruturas de dados personalizadas.
+
+5. **Funções e Modularidade:**
+   - Criar funções reutilizáveis e entender o conceito de modularidade.
+   - Passagem de parâmetros por valor e referência.
+
+6. **Entrada e Saída (I/O):**
+   - Usar funções como `printf` e `scanf` para entrada e saída padrão.
+
+7. **Arquivos:**
+   - Ler e escrever dados em arquivos usando `FILE` e funções associadas.
+
+8. **Manipulação de Bits:**
+   - Trabalhar com operadores de bits e máscaras de bits.
+
+9. **Estruturas de Controle Avançadas:**
+   - Trabalhar com estruturas de controle avançadas, como `goto` (embora seja raramente recomendado, é bom entender seu funcionamento).
+
+10. **Ponteiros para Funções:**
+    - Entender como usar ponteiros para funções.
+
+11. **Pré-processador:**
+    - Compreender o papel do pré-processador e como usar diretivas como `#define` e `#include`.
+
+12. **Makefiles e Compilação:**
+    - Criar e usar Makefiles para compilar projetos C.
+
+13. **Depuração e Valgrind:**
+    - Aprender técnicas de depuração e usar ferramentas como Valgrind para encontrar erros de memória.
+
+14. **Concorrência (Opcional):**
+    - Explorar conceitos básicos de concorrência usando bibliotecas como `pthread` (se estiver interessado em programação concorrente).
+
+15. **Padrões de Codificação:**
+    - Familiarizar-se com padrões de codificação em C para escrever código claro e legível.
+
+16. **Projetos Práticos:**
+    - A melhor maneira de aprender é praticando. Trabalhe em projetos práticos para aplicar os conceitos que você aprendeu.

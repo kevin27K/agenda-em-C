@@ -1,0 +1,41 @@
+### Sistema de Gestão de Contatos em C:
+
+#### Funcionalidades Básicas:
+1. **Cadastro de Contatos:**
+   - Permita ao usuário cadastrar novos contatos com informações como nome, número de telefone, e endereço.
+
+2. **Listagem de Contatos:**
+   - Implemente uma função para listar todos os contatos cadastrados.
+
+3. **Busca de Contatos:**
+   - Implemente uma função que permita ao usuário buscar um contato pelo nome.
+
+4. **Edição e Exclusão de Contatos:**
+   - Permita a edição e exclusão de contatos existentes.
+
+#### Persistência de Dados:
+5. **Armazenamento em Arquivo:**
+   - Implemente a capacidade de salvar os contatos em um arquivo e carregá-los de volta.
+
+6. **Leitura/Gravação de Arquivos:**
+   - Use as funções de leitura e gravação de arquivos (`fopen`, `fclose`, `fwrite`, `fread`) para persistir os dados.
+
+#### Gerenciamento de Memória:
+7. **Alocação Dinâmica:**
+   - Utilize alocação dinâmica de memória para armazenar os dados dos contatos.
+
+8. **Liberação de Memória:**
+   - Certifique-se de liberar a memória alocada corretamente para evitar vazamentos de memória.
+
+#### Melhorias Opcionais:
+9. **Ordenação de Contatos:**
+   - Implemente uma funcionalidade para ordenar a lista de contatos por nome.
+
+10. **Busca Avançada:**
+    - Adicione uma opção de busca avançada, por exemplo, procurando por contatos em uma determinada faixa etária.
+
+11. **Interface de Linha de Comando (CLI):**
+    - Crie uma interface de linha de comando amigável para o usuário interagir com o sistema.
+
+12. **Logs e Tratamento de Erros:**
+    - Registre eventos importantes em um arquivo de log e implemente tratamento de erros robusto.
