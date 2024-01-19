@@ -22,9 +22,9 @@ int selectOption(Options opt) {
             int savedContact = addNewContact(contactInfo[0], contactInfo[1], contactInfo[2]);//passando cada valor de cada indice nos parametros da função que adiciona contatos no array agenda
             
 
-            if(savedContact == 1){// verifica se salvou
+            if(savedContact == 0){// verifica se salvou
                 printf("+++++++++++++++++\nSalvo!\n+++++++++++++++++\n");
-            }else if (savedContact == 0){
+            }else if (savedContact == 1){
                 printf("+++++++++++++++++\nErro ao Salvar!\n+++++++++++++++++\n");
             }
 

@@ -22,7 +22,7 @@ int main(){
         switch (opt) {
             case 1:
 
-                loadContact();
+                //loadContact();
 
                 //troca de tela
                 if(nextScreen == TRUE){

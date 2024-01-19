@@ -6,6 +6,7 @@
 
 //teste ou temporario nesse arquivo
 
+/*
 int registerContact(){
     FILE *arquivo;
     arquivo = fopen("lista_contatos.txt", "w");
@@ -46,13 +47,25 @@ int loadContact(){
 }
 //-------------------------------------
 
-int selectionSort(int arr[100]){
+int selectionSort(int arr[100]){ //adapatar para 
     int cont;
-    for (int i = 0; i < 9; i++){
-        if(arr){
-
+    int maior;
+    for (int i = 0; i < 16; i++){
+        //printf("%d\n", arr[i]);
+        printf("Compatando %d\n", arr[i]);
+        for(int j = i+1; j < 16; j++ ){
+            printf("com %d\n", arr[j]);
+            if(arr[j] < arr[i]){
+                maior = arr[i];
+                arr[i] = arr[j];
+                arr[j] = maior;
+            }
         }
         cont++;
+    }
+
+    for (int x = 0; x < 16; x++){
+        printf("%d\n", arr[x]);
     }
 
 
@@ -61,3 +74,4 @@ int selectionSort(int arr[100]){
     return arr[100];
     
 }
+*/

@@ -4,7 +4,7 @@
 SRC_DIR="src"
 
 # Arquivos de origem
-SRCS="$SRC_DIR/main.c $SRC_DIR/contact.c $SRC_DIR/layout.c $SRC_DIR/contact_layout.c $SRC_DIR/search_engine.c" 
+SRCS="$SRC_DIR/main.c $SRC_DIR/contact.c $SRC_DIR/layout.c $SRC_DIR/contact_layout.c $SRC_DIR/search_engine.c $SRC_DIR/uuid.c" 
 
 # Flags de compilação
 CFLAGS="-Wall -Iinclude"

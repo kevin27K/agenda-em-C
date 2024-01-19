@@ -4,13 +4,17 @@
 #define MAX_CONTATOS 100
 
 typedef struct {
+    char uuid[37];
     char nome[50];
     char telefone[12];
     char email[50];
-} Contato;
+} Contact;
 
-extern Contato agenda[MAX_CONTATOS];
+extern Contact agenda[MAX_CONTATOS];
 extern int totalContatos;
+
+void generateUUID(char *uuid);
+void initializeContact(Contact *contact);
 
 int addNewContact();
 void showAllContacts();
