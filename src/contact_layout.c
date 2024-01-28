@@ -1,4 +1,4 @@
-
+#include "tools.h"
 #include "contact_layout.h"
 #include "contact.h"
 #include "layout.h"
@@ -44,8 +44,10 @@ int selectOption(Options opt) {
             break;
         case SEARCH_CONTACT:
             char name[50];
+            int c;
+            while ((c = getchar()) != '\n' && c != EOF);
             searchContactScreen();
-            scanf("%s", name);
+            toReadString(name, 50);
             searchContact(name);
             nextScreen = backMenuOrSearchAgain();
             return nextScreen;

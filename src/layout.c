@@ -1,4 +1,5 @@
 #include "layout.h"
+#include "tools.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -86,17 +87,26 @@
 
         // Alocando memória para as strings
         arr[0] = malloc(50 * sizeof(char));  // para o nome
-        arr[1] = malloc(12 * sizeof(char));  // para o telefone
+        arr[1] = malloc(17 * sizeof(char));  // para o telefone
         arr[2] = malloc(50 * sizeof(char));  // para o e-mail
 
+        // Limpar o buffer de entrada
+        int c;
+        while ((c = getchar()) != '\n' && c != EOF);
+
         printf("Nome: ");
-        scanf("%s", arr[0]);
+        toReadString(arr[0], 50);
+        //scanf("%s", arr[0]);
 
         printf("Telefone: ");
-        scanf("%s", arr[1]);
+        toReadString(arr[1], 17);
+        //scanf("%s", arr[1]);
 
         printf("E-mail: ");
-        scanf("%s", arr[2]);
-
+        toReadString(arr[2], 50);
+        //scanf("%s", arr[2]);
         return arr;
     }
+
+    //Criar função para limpar o buffer do teclado
+    //refatorar o codigo
