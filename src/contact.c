@@ -8,8 +8,9 @@
 #define TRUE 1
 #define FALSE 0
 
-Contact agenda[MAX_CONTATOS];
-int totalContatos = 10;
+Contact agenda[MAX_CONTATOS];//contatos cadastrados
+Contact similarNames[MAX_CONTATOS];//lista com nomes parecidos com o que o usuario digitou
+int totalContatos = 10; // 10 só para testar valor original é 0
 
 void initializeContact(Contact *contact){
     generateUUID(contact->uuid);
@@ -34,7 +35,7 @@ void showAllContacts(){
         printf("Nome %s\n", agenda[i].nome);
         printf("Telefone %s\n", agenda[i].telefone);
         printf("E-mail %s\n", agenda[i].email);
-        //printf("UUID: %s\n", agenda[i].uuid);
+        printf("UUID: %s\n", agenda[i].uuid);
         printf(".............................\n");
     }
 }
@@ -45,16 +46,14 @@ void searchContact(char name[50]){
     //e exibir esses nomes todos tem que fazer referencia a posição em que eles se encontram
     //no array de onde se origina com base em um id que terei que implementar
     
-    char listaDeNome[MAX_CONTATOS][50];
-
-    //int lenName = countLetters(name);
-
-   
-
+    
+    
     for (int i = 0; i < totalContatos; i++){
          if(compareString(agenda[i].nome, name) == TRUE){
-            //strcpy(listaDeNome[i], agenda[i].nome);
-            printf("é igual\n");    
+            strcpy(similarNames[i].nome, agenda[i].nome);
+            strcpy(similarNames[i].uuid, agenda[i].uuid);
+            //printf("é igual\n"); 
+            //adiciona nome e uuid similarNames se existir nomes parecidos dos contatos cadastrados    
         }else {
             printf("é diferente\n");
         }
@@ -62,7 +61,10 @@ void searchContact(char name[50]){
     }
 
     for (int i = 0; i < totalContatos; i++){
-        printf("%s\n", listaDeNome[i]);
+        printf("Nomes similar\n");
+        printf("%s\n", similarNames[i].nome);
+        printf("%s\n", similarNames[i].uuid);
+        printf("----------------------------------\n");
     }
     
 }

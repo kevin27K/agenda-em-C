@@ -109,4 +109,5 @@
     }
 
     //Criar função para limpar o buffer do teclado
+    //implementar uma função para saber se a string tem espaço em branco
     //refatorar o codigo
